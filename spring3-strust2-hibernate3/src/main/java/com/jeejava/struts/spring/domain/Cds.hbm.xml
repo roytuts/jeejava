@@ -1,0 +1,19 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.jeejava.struts.spring.domain.Cds" table="cds"
+		catalog="cdcol">
+		<id name="id" type="java.lang.Long">
+			<column name="id"></column>
+			<generator class="identity"></generator>
+		</id>
+		<property name="title" type="string">
+			<column name="title" length="200"></column>
+		</property>
+		<property name="interpret" type="string">
+			<column name="interpret" length="200"></column>
+		</property>
+	</class>
+</hibernate-mapping>
