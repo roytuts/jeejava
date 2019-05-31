@@ -1,0 +1,1 @@
+You can read tutorial https://www.jeejava.com/show-warning-message-to-user-when-session-expires/
