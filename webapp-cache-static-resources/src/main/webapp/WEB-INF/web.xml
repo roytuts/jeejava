@@ -1,0 +1,81 @@
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee 
+		 http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	version="3.1">
+	
+	<display-name>Cache static resources in webapp</display-name>
+
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+
+	<filter>
+		<display-name>NoCacheFilter</display-name>
+		<filter-name>NoCacheFilter</filter-name>
+		<filter-class>com.jeejava.cache.resource.filters.NoCacheFilter</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>NoCacheFilter</filter-name>
+		<url-pattern>/NoCacheFilter</url-pattern>
+	</filter-mapping>
+
+	<filter-mapping>
+		<filter-name>NoCacheFilter</filter-name>
+		<url-pattern>*.jsf</url-pattern>
+		<dispatcher>REQUEST</dispatcher>
+		<dispatcher>FORWARD</dispatcher>
+	</filter-mapping>
+
+	<filter>
+		<filter-name>imagesCache</filter-name>
+		<filter-class>com.jeejava.cache.resource.filters.CacheFilter</filter-class>
+		<init-param>
+			<param-name>static</param-name>
+			<param-value>true</param-value>
+		</init-param>
+		<init-param>
+			<param-name>expirationTime</param-name>
+			<param-value>2592000</param-value>
+		</init-param>
+	</filter>
+
+	<filter>
+		<filter-name>cssCache</filter-name>
+		<filter-class>com.jeejava.cache.resource.filters.CacheFilter</filter-class>
+		<init-param>
+			<param-name>expirationTime</param-name>
+			<param-value>604800</param-value>
+		</init-param>
+	</filter>
+
+	<filter>
+		<filter-name>jsCache</filter-name>
+		<filter-class>com.jeejava.cache.resource.filters.CacheFilter</filter-class>
+		<init-param>
+			<param-name>private</param-name>
+			<param-value>true</param-value>
+		</init-param>
+		<init-param>
+			<param-name>expirationTime</param-name>
+			<param-value>216000</param-value>
+		</init-param>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>imagesCache</filter-name>
+		<url-pattern>/img/*</url-pattern>
+	</filter-mapping>
+
+	<filter-mapping>
+		<filter-name>cssCache</filter-name>
+		<url-pattern>*.css</url-pattern>
+	</filter-mapping>
+
+	<filter-mapping>
+		<filter-name>jsCache</filter-name>
+		<url-pattern>*.js</url-pattern>
+	</filter-mapping>
+
+</web-app>
