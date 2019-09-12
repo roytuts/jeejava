@@ -1,1 +1,1 @@
-You can go through tutorial https://www.jeejava.com/spring-jsp-and-servlet-integration-example/
+You can go through tutorial https://www.roytuts.com/spring-jsp-and-servlet-integration-example/

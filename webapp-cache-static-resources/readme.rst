@@ -1,1 +1,1 @@
-You can read tutorial https://www.jeejava.com/cache-static-resources-like-css-js-and-images-for-a-specific-time-period/
+You can read tutorial https://www.roytuts.com/cache-static-resources-like-css-js-and-images-for-a-specific-time-period/

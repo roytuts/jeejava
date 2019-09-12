@@ -13,7 +13,7 @@
 	<filter>
 		<display-name>NoCacheFilter</display-name>
 		<filter-name>NoCacheFilter</filter-name>
-		<filter-class>com.jeejava.cache.resource.filters.NoCacheFilter</filter-class>
+		<filter-class>com.roytuts.cache.resource.filters.NoCacheFilter</filter-class>
 	</filter>
 
 	<filter-mapping>
@@ -30,7 +30,7 @@
 
 	<filter>
 		<filter-name>imagesCache</filter-name>
-		<filter-class>com.jeejava.cache.resource.filters.CacheFilter</filter-class>
+		<filter-class>com.roytuts.cache.resource.filters.CacheFilter</filter-class>
 		<init-param>
 			<param-name>static</param-name>
 			<param-value>true</param-value>
@@ -43,7 +43,7 @@
 
 	<filter>
 		<filter-name>cssCache</filter-name>
-		<filter-class>com.jeejava.cache.resource.filters.CacheFilter</filter-class>
+		<filter-class>com.roytuts.cache.resource.filters.CacheFilter</filter-class>
 		<init-param>
 			<param-name>expirationTime</param-name>
 			<param-value>604800</param-value>
@@ -52,7 +52,7 @@
 
 	<filter>
 		<filter-name>jsCache</filter-name>
-		<filter-class>com.jeejava.cache.resource.filters.CacheFilter</filter-class>
+		<filter-class>com.roytuts.cache.resource.filters.CacheFilter</filter-class>
 		<init-param>
 			<param-name>private</param-name>
 			<param-value>true</param-value>

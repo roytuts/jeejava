@@ -1,1 +1,1 @@
-You can read tutorial https://www.jeejava.com/spring-boot-actuator-production-ready-features/
+You can read tutorial https://www.roytuts.com/spring-boot-actuator-production-ready-features/

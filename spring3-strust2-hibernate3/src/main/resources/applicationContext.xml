@@ -26,19 +26,19 @@ http://www.springframework.org/schema/context http://www.springframework.org/sch
 	<!-- Spring and Struts beans -->
 	<!-- action -->
 	<bean id="retrieveCdAction"
-		class="com.jeejava.struts.spring.action.CDAction">
+		class="com.roytuts.struts.spring.action.CDAction">
 		<property name="cdService" ref="cdService"></property>
 	</bean>
 
 	<!-- service -->
 	<bean id="cdService"
-		class="com.jeejava.struts.spring.service.impl.CDServiceImpl">
+		class="com.roytuts.struts.spring.service.impl.CDServiceImpl">
 		<property name="cdDao" ref="cdDao"></property>
 	</bean>
 
 	<!-- dao -->
 	<bean id="cdDao"
-		class="com.jeejava.struts.spring.dao.impl.CDDaoImpl">
+		class="com.roytuts.struts.spring.dao.impl.CDDaoImpl">
 		<property name="sessionFactory" ref="sessionFactory"></property>
 	</bean>
 </beans>

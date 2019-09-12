@@ -13,6 +13,6 @@ http://www.springframework.org/schema/context http://www.springframework.org/sch
 	<context:annotation-config />
 
 	<bean id="todoService"
-		class="com.jeejava.springjspservlet.service.impl.ToDoServiceImpl" />
+		class="com.roytuts.springjspservlet.service.impl.ToDoServiceImpl" />
 
 </beans>

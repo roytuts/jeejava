@@ -1,1 +1,1 @@
-You can read tutorial https://www.jeejava.com/global-exception-configuration-using-web-xml-servlet-and-jsp/
+You can read tutorial https://www.roytuts.com/global-exception-configuration-using-web-xml-servlet-and-jsp/
